@@ -1,0 +1,3 @@
+<CONFIG WS_port="50788" WS_localonly="True">
+  <FEED sourceURL="https://www.reddit.com/r/popular/new/" sourceEncoding="utf-8" searchPatGlobal="&lt;!DOCTYPE html&gt;{%}&lt;/html&gt;" searchPatItem="class=&quot;SQnoC3ObvgnGjWt90zD9Z _2INHSNB8V5eaWp4P0rY_mE&quot; href=&quot;{%}&quot;&gt;&lt;div class=&quot;{*}&lt;h3 class=&quot;_eYtD2XCVieq6emjKBH3m&quot;&gt;{%}&lt;/h3&gt;" title="Reddit - new" link="https://www.reddit.com/r/popular/new/" description="" itemPatTitle="{%2}" itemPatLink="https://www.reddit.com{%1}" itemPatDescription="" filename="reddit_new.rss" />
+</CONFIG>

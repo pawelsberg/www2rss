@@ -1,27 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿namespace Pawelsberg.Www2Rss;
 
-namespace Pawelsberg.Www2Rss
+public class RssWebServer : WebServer
 {
-    public class RssWebServer : WebServer
+    public FeedList Feeds { get; } = new();
+
+    public RssWebServer(ushort port, bool localonly, string server)
+        : base(port, localonly, server)
     {
-        private FeedList _Feeds = new FeedList();
-        public FeedList Feeds
-        {
-            get { return _Feeds; }
-        }
-
-        public RssWebServer(ushort port, bool localonly, string server)
-            : base(port, localonly, server)
-        {
-        }
-
-        protected override byte[] GetFileContent(string fileName)
-        {
-            return _Feeds.GetFileContent(fileName);
-        }
-
     }
+
+    protected override byte[] GetFileContent(string fileName) => Feeds.GetFileContent(fileName);
 }
